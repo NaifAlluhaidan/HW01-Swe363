@@ -51,19 +51,19 @@
       <hr size="1" noshade>
       <div class="userComments-section">
         <h2>User Comments</h2>
-
           <form class="EnterComment-form" action="process.php" method="post" style="width:50%">
             <fieldset>
               <legend> Enter a comment:</legend>
                 <label for="name"><strong>Name:</strong></label>
-                <input type="text" name="name" size="90%"/>
-                <br>
+                <br> <!-- to have the textfield in spereat line --!>
+                <input type="text" name="name" size="100%"/>
                 <p>
                   <label for="commen"><strong>Comment:</strong></label>
-                  <textarea name="commentArea" rows="4" cols="90%" placeholder="Enter your comment here..."></textarea>
+                  <br> <!-- to have the textfield in spereat line --!>
+                  <textarea name="commentArea" rows="5%" cols="90%" placeholder="Enter your comment here..."></textarea>
                 </p>
-                <a href="#" type="submit"><img  src="images/PlusSign.png"height="80" width="80" /></a>
-              <!-- <input type="image" src="images/PlusSign.png" alt="submit" height="80" width="80" name="saveComment"> --!>
+                <a href="#" type="submit"><img  src="images/PlusSign.png"height="70" width="70" /></a>
+              <!--  <input type="image" src="images/PlusSign.png" alt="submit" height="50" width="50" name="saveComment"> --!>
             </fieldset>
           </form>
 
@@ -74,48 +74,42 @@
 
       <hr size="1" noshade>
       <div class="bottom-container">
-      <h2>Sign-up to receive new recipes:</h2>
-	<form action="mailto:wassam@jok.com">
-  <label for="emails">Enter email addresses:</label>
-                <input type="email" name="email" required size="35%" placeholder="xxxx@domailn.com">
-  <button type="submit">
-</form>
-        <form class="personalInfo-form" action="mailto:alza3em_1920@hotmail.com" method="post" style="width:35%">
-          <fieldset>
-            <legend>Personal Information</legend>
-              <div>
-                <label for="name"><strong>Name: </strong></label>
-                <input type="text" name="name" size="35%">
-              </div>
+        <h2>Sign-up to receive new recipes:</h2>
+          <form class="personalInfo-form" action="mailto:alza3em_1920@hotmail.com" method="post" style="width:35%">
+            <fieldset>
+              <legend>Personal Information</legend>
+                <div>
+                  <label for="name"><strong>Name: </strong></label>
+                  <input type="text" name="name" size="35%">
+                </div>
+                <br>
+                <div>
+                  <label for=""><strong>Email: </strong></label>
+                  <input type="email" name="email" required size="35%" placeholder="xxxx@domailn.com">
+                </div>
+            </fieldset>
             <br>
-              <div>
-                <label for=""><strong>Email: </strong></label>
-                <input type="email" name="email" required size="35%" placeholder="xxxx@domailn.com">
-              </div>
-          </fieldset>
-          <br>
-          <fieldset>
-            <legend>Types of recipes</legend>
-              <label for="breakfast">breakfast</label>
-              <input type="radio" name="eat-choice" value="breakfast">
-              <label for="lunch">Lunch</label>
-              <input type="radio" name="eat-choice" value="Lunch">
-              <label for="dinner">Dinner</label>
-              <input type="radio" name="eat-choice" value="Dinner">
-          </fieldset>
-        </form>
+            <fieldset>
+              <legend>Types of recipes</legend>
+                <label for="breakfast">breakfast</label>
+                <input type="radio" name="eat-choice" value="breakfast">
+                <label for="lunch">Lunch</label>
+                <input type="radio" name="eat-choice" value="Lunch">
+                <label for="dinner">Dinner</label>
+                <input type="radio" name="eat-choice" value="Dinner">
+            </fieldset>
+            <br>
+            <!--<button type="submit" name="Sign-Up">Sign Up</button> --!>
+            <input type="submit" name="Sign-Up" value="Sign Up">
+          </form>
         <br>
-        <button type="submit" name="Sign-Up">Sign Up</button>
-
-
-        <!--<input type="submit" name="Sign-Up" value="Sign Up">--!>
+        <hr size="1" noshade>
       </div>
-      <hr size="1" noshade>
     </main>
       <footer>
-      <h2>LINKS</h2>
-      <!-- to look directlly for specific words, write them in browser then copy url --!>
-      <a class="footer-link" href="https://www.google.com/search?q=fish+fingers+recipe&sxsrf=ALiCzsbM358ri66GFMB0N16TIp7_qoeNsA%3A1664478645577&ei=te01Y8buIojckwXYhZWYDg&ved=0ahUKEwiGnZ-T2rr6AhUI7qQKHdhCBeMQ4dUDCA4&uact=5&oq=fish+fingers+recipe&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6DQgAEEcQ1gQQsAMQyQM6BggAEB4QBzoHCCMQsAIQJ0oECEEYAEoECEYYAFDaKliXR2CnSmgDcAF4AIAB7wGIAfUIkgEDMi01mAEAoAEByAEIwAEB&sclient=gws-wiz">Search for other fish fingers recipes</a>
-    </footer>
+        <h2>LINKS</h2>
+        <!-- to look directlly for specific words, write them in browser then copy url --!>
+        <a class="footer-link" href="https://www.google.com/search?q=fish+fingers+recipe&sxsrf=ALiCzsbM358ri66GFMB0N16TIp7_qoeNsA%3A1664478645577&ei=te01Y8buIojckwXYhZWYDg&ved=0ahUKEwiGnZ-T2rr6AhUI7qQKHdhCBeMQ4dUDCA4&uact=5&oq=fish+fingers+recipe&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6DQgAEEcQ1gQQsAMQyQM6BggAEB4QBzoHCCMQsAIQJ0oECEEYAEoECEYYAFDaKliXR2CnSmgDcAF4AIAB7wGIAfUIkgEDMi01mAEAoAEByAEIwAEB&sclient=gws-wiz">Search for other fish fingers recipes</a>
+      </footer>
   </body>
 </html>
