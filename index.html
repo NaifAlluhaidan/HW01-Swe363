@@ -55,27 +55,36 @@
             <fieldset>
               <legend> Enter a comment:</legend>
                 <label for="name"><strong>Name:</strong></label>
-                <br> <!-- to have the textfield in spereat line --!>
+                <br> <!--to have the textfield in spereat line !-->
                 <input type="text" name="name" size="100%"/>
                 <p>
                   <label for="commen"><strong>Comment:</strong></label>
-                  <br> <!-- to have the textfield in spereat line --!>
+                  <br> <!-- to have the textfield in spereat line !-->
                   <textarea name="commentArea" rows="5%" cols="90%" placeholder="Enter your comment here..."></textarea>
                 </p>
                 <a href="#" type="submit"><img  src="images/PlusSign.png"height="70" width="70" /></a>
-              <!--  <input type="image" src="images/PlusSign.png" alt="submit" height="50" width="50" name="saveComment"> --!>
+              <!--  <input type="image" src="images/PlusSign.png" alt="submit" height="50" width="50" name="saveComment"> !-->
             </fieldset>
           </form>
 
         <h3>All comments:</h3>
-        <p class="first-comment" style="margin-left: 40px">This is a very fun recipe to follow.<br>- Ahmed Z.</p>
-        <p class="secound-comment" style="margin-left: 40px">This is my favorite recipe. I enjoy it.<br>- Karim K.</p>
+        <!-- <p class="first-comment" style="margin-left: 40px">This is a very fun recipe to follow.<br>- Ahmed Z.</p> !-->
+        <!-- <p class="secound-comment" style="margin-left: 40px">This is my favorite recipe. I enjoy it.<br>- Karim K.</p> !-->
+        <dl class="comment-section">
+          <dd>This is a very fun recipe to follow.</dd>
+          <br>
+          <dd>- Ahmed Z.</dd>
+          <br>
+          <dd>This is my favorite recipe. I enjoy it.</dd>
+          <br>
+          <dd>- Karim K.</dd>
+        </dl>
       </div>
 
       <hr size="1" noshade>
       <div class="bottom-container">
         <h2>Sign-up to receive new recipes:</h2>
-          <form class="personalInfo-form" action="mailto:alza3em_1920@hotmail.com" method="post" encrypt="multipart/from-data" style="width:35%">
+          <form class="personalInfo-form" action="mailto:alza3em_1920@hotmail.com" method="post"  style="width:35%">
             <fieldset>
               <legend>Personal Information</legend>
                 <div>
@@ -99,7 +108,7 @@
                 <input type="radio" name="eat-choice" value="Dinner">
             </fieldset>
             <br>
-            <!--<button type="submit" name="Sign-Up">Sign Up</button> --!>
+            <!--<button type="submit" name="Sign-Up">Sign Up</button> !-->
             <input type="submit" name="Sign-Up" value="Sign Up">
           </form>
         <br>
@@ -108,7 +117,7 @@
     </main>
       <footer>
         <h2>LINKS</h2>
-        <!-- to look directlly for specific words, write them in browser then copy url --!>
+        <!-- to look directlly for specific words, write them in browser then copy url !-->
         <a class="footer-link" href="https://www.google.com/search?q=fish+fingers+recipe&sxsrf=ALiCzsbM358ri66GFMB0N16TIp7_qoeNsA%3A1664478645577&ei=te01Y8buIojckwXYhZWYDg&ved=0ahUKEwiGnZ-T2rr6AhUI7qQKHdhCBeMQ4dUDCA4&uact=5&oq=fish+fingers+recipe&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6DQgAEEcQ1gQQsAMQyQM6BggAEB4QBzoHCCMQsAIQJ0oECEEYAEoECEYYAFDaKliXR2CnSmgDcAF4AIAB7wGIAfUIkgEDMi01mAEAoAEByAEIwAEB&sclient=gws-wiz">Search for other fish fingers recipes</a>
       </footer>
   </body>
